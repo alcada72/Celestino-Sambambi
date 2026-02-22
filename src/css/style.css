@@ -957,6 +957,7 @@ a {
 }
 .galeria-item:hover .galeria-overlay {
   opacity: 1;
+  display: none;
 }
 .galeria-item:nth-child(1) {
   grid-column: span 2;
