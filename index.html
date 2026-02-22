@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituto Médio Politécnico Celestino Sambambi</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    n
+  </head>
+  <body>
+    <!-- ================================
+       HEADER
+  ================================= -->
+    <header id="header">
+      <div class="container">
+        <nav class="nav-inner">
+          <!-- Logo -->
+          <a href="#inicio" class="nav-logo">
+            <div class="logo-circle">CS</div>
+            <div class="logo-text-wrap">
+              <div class="logo-text-main">Instituto Médio Politécnico</div>
+              <div class="logo-text-sub">Celestino Sambambi</div>
+            </div>
+          </a>
+
+          <!-- Desktop Nav Links -->
+          <ul class="nav-links">
+            <li><a href="#inicio" class="active">Início</a></li>
+            <li><a href="#sobre">Sobre a Escola</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contactos" class="nav-cta">Contactos</a></li>
+          </ul>
+
+          <!-- Hamburger (mobile) -->
+          <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#inicio" onclick="closeMenu()">Início</a>
+      <a href="#sobre" onclick="closeMenu()">Sobre a Escola</a>
+      <a href="#cursos" onclick="closeMenu()">Cursos</a>
+      <a href="#noticias" onclick="closeMenu()">Notícias</a>
+      <a href="#galeria" onclick="closeMenu()">Galeria</a>
+      <a href="#contactos" onclick="closeMenu()">Contactos</a>
+    </div>
+
+    <!-- ================================
+       HERO / INÍCIO
+  ================================= -->
+    <section id="inicio">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-grid"></div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-inner">
+            <!-- Text -->
+            <div class="hero-text">
+              <div class="hero-badge">
+                <i class="fas fa-graduation-cap"></i> Excelência Técnica desde
+                2005
+              </div>
+              <h1 class="hero-title">
+                Formando <span>Profissionais</span><br />para o Futuro
+              </h1>
+              <p class="hero-desc">
+                O Instituto Médio Politécnico Celestino Sambambi oferece
+                formação técnica de excelência, preparando jovens com
+                competências práticas e teóricas para os desafios do mercado de
+                trabalho angolano e global.
+              </p>
+              <div class="hero-actions">
+                <a href="#cursos" class="btn btn-primary"
+                  ><i class="fas fa-book-open"></i> Conheça os Cursos</a
+                >
+                <a href="#sobre" class="btn btn-outline"
+                  ><i class="fas fa-play"></i> Saiba Mais</a
+                >
+              </div>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <div class="stat-num">
+                    1200<span style="color: #fff; font-size: 1.5rem">+</span>
+                  </div>
+                  <div class="stat-label">Alunos Formados</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">
+                    18<span style="color: #fff; font-size: 1.5rem">+</span>
+                  </div>
+                  <div class="stat-label">Anos de Excelência</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-num">12</div>
+                  <div class="stat-label">Cursos Técnicos</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Visual card -->
+            <div class="hero-visual">
+              <div class="hero-card-main">
+                <div class="hero-img-placeholder">
+                  <i class="fas fa-school"></i>
+                  <p>Instituto Médio Politécnico<br />Celestino Sambambi</p>
+                </div>
+                <!-- Floating mini-cards -->
+                <div class="float-card float-card-1">
+                  <div class="float-icon orange">
+                    <i class="fas fa-award"></i>
+                  </div>
+                  <div class="float-card-text">
+                    <div class="float-card-label">Reconhecimento</div>
+                    <div class="float-card-value">Melhor Escola Técnica</div>
+                  </div>
+                </div>
+                <div class="float-card float-card-2">
+                  <div class="float-icon blue">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <div class="float-card-text">
+                    <div class="float-card-label">Turmas 2025</div>
+                    <div class="float-card-value">450 Alunos Ativos</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       SOBRE A ESCOLA
+  ================================= -->
+    <section id="sobre">
+      <div class="container">
+        <div class="sobre-inner">
+          <!-- Visual -->
+          <div class="sobre-visual reveal-left">
+            <div class="sobre-img-wrap">
+              <div class="sobre-placeholder">
+                <i class="fas fa-building-columns"></i>
+                <p style="font-size: 0.9rem; color: var(--gray)">
+                  Instalações do Instituto
+                </p>
+              </div>
+            </div>
+            <div class="sobre-badge-float">
+              <span class="num">20+</span>
+              <span class="lbl">Anos de História</span>
+            </div>
+          </div>
+          <!-- Text -->
+          <div class="sobre-text reveal-right">
+            <div class="section-tag">Sobre a Escola</div>
+            <h2 class="section-title">
+              Uma Instituição Comprometida com a Excelência
+            </h2>
+            <p class="section-sub">
+              Fundado com o propósito de democratizar o acesso à educação
+              técnica de qualidade em Angola, o Instituto Médio Politécnico
+              Celestino Sambambi tem sido um pilar fundamental no
+              desenvolvimento de profissionais qualificados para diversos
+              sectores da economia nacional.
+            </p>
+            <p
+              style="
+                margin-top: 16px;
+                font-size: 0.9rem;
+                color: var(--gray);
+                line-height: 1.8;
+              "
+            >
+              Com uma equipa docente altamente qualificada, infraestruturas
+              modernas e laboratórios equipados, a nossa escola oferece um
+              ambiente de aprendizagem único que combina teoria e prática para
+              uma formação completa e eficaz.
+            </p>
+
+            <div class="mvv-grid" style="margin-top: 32px">
+              <div class="mvv-card">
+                <h4>
+                  <i class="fas fa-bullseye" style="margin-right: 6px"></i>
+                  Missão
+                </h4>
+                <p>
+                  Formar profissionais técnicos competentes, éticos e inovadores
+                  capazes de impulsionar o desenvolvimento de Angola.
+                </p>
+              </div>
+              <div class="mvv-card">
+                <h4>
+                  <i class="fas fa-eye" style="margin-right: 6px"></i> Visão
+                </h4>
+                <p>
+                  Ser a referência nacional em educação técnica e politécnica,
+                  reconhecida pela excelência e inovação pedagógica.
+                </p>
+              </div>
+              <div class="mvv-card">
+                <h4>
+                  <i class="fas fa-star" style="margin-right: 6px"></i> Valores
+                </h4>
+                <p>
+                  Integridade, excelência, inovação, respeito e compromisso com
+                  o desenvolvimento humano e social.
+                </p>
+              </div>
+            </div>
+
+            <a href="#cursos" class="btn btn-blue" style="margin-top: 32px"
+              ><i class="fas fa-arrow-right"></i> Conheça os Nossos Cursos</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       CURSOS
+  ================================= -->
+    <section id="cursos">
+      <div class="container">
+        <div class="cursos-header reveal">
+          <div class="section-tag">Cursos Técnicos</div>
+          <h2 class="section-title">Formação Técnica de Qualidade</h2>
+          <p class="section-sub">
+            Escolha entre uma variedade de cursos técnicos profissionalizantes
+            desenhados para as exigências do mercado de trabalho actual.
+          </p>
+        </div>
+
+        <div class="cursos-grid">
+          <!-- Curso 1 -->
+          <div class="curso-card reveal" style="transition-delay: 0.05s">
+            <div class="curso-icon"><i class="fas fa-computer"></i></div>
+            <h3>Informática e Gestão</h3>
+            <p>
+              Formação em sistemas informáticos, programação, gestão de bases de
+              dados e tecnologias da informação aplicadas ao ambiente
+              empresarial.
+            </p>
+            <span class="curso-tag">3 Anos</span>
+          </div>
+          <!-- Curso 2 -->
+          <div class="curso-card reveal" style="transition-delay: 0.1s">
+            <div class="curso-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Electrotecnia</h3>
+            <p>
+              Instalações eléctricas, automação industrial, electrónica e
+              sistemas de energia. Preparação para actuar em sectores
+              industriais e de infraestrutura.
+            </p>
+            <span class="curso-tag">3 Anos</span>
+          </div>
+          <!-- Curso 3 -->
+          <div class="curso-card reveal" style="transition-delay: 0.15s">
+            <div class="curso-icon"><i class="fas fa-gears"></i></div>
+            <h3>Mecânica Industrial</h3>
+            <p>
+              Manutenção de máquinas, processos de produção industrial,
+              metrologia e desenho técnico mecânico aplicado à indústria.
+            </p>
+            <span class="curso-tag">3 Anos</span>
+          </div>
+          <!-- Curso 4 -->
+          <div class="curso-card reveal" style="transition-delay: 0.2s">
+            <div class="curso-icon"><i class="fas fa-flask"></i></div>
+            <h3>Química Industrial</h3>
+            <p>
+              Processos químicos industriais, controlo de qualidade, análises
+              laboratoriais e gestão ambiental para indústrias de produção.
+            </p>
+            <span class="curso-tag">3 Anos</span>
+          </div>
+          <!-- Curso 5 -->
+          <div class="curso-card reveal" style="transition-delay: 0.25s">
+            <div class="curso-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Contabilidade e Finanças</h3>
+            <p>
+              Contabilidade empresarial, gestão financeira, fiscalidade angolana
+              e auditoria para o sector público e privado.
+            </p>
+            <span class="curso-tag">3 Anos</span>
+          </div>
+          <!-- Curso 6 -->
+          <div class="curso-card reveal" style="transition-delay: 0.3s">
+            <div class="curso-icon"><i class="fas fa-hard-hat"></i></div>
+            <h3>Construção Civil</h3>
+            <p>
+              Topografia, estruturas, gestão de obras, materiais de construção e
+              desenho de arquitectura para projectos civis.
+            </p>
+            <span class="curso-tag">3 Anos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       NOTÍCIAS
+  ================================= -->
+    <section id="noticias">
+      <div class="container">
+        <div class="noticias-header">
+          <div>
+            <div class="section-tag">Notícias & Eventos</div>
+            <h2 class="section-title">Fique Informado</h2>
+          </div>
+          <a
+            href="#noticias"
+            class="btn btn-outline"
+            style="color: var(--blue); border-color: var(--blue)"
+            >Ver Todas <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="noticias-grid">
+          <!-- Notícia principal -->
+          <div class="noticia-featured reveal-left">
+            <div class="noticia-img">
+              <i class="fas fa-newspaper"></i>
+              <span class="noticia-cat">Destaque</span>
+            </div>
+            <div class="noticia-body">
+              <div class="noticia-meta">
+                <span
+                  ><i class="fas fa-calendar"></i> 10 de Fevereiro, 2025</span
+                >
+                <span><i class="fas fa-tag"></i> Evento</span>
+              </div>
+              <h3>
+                Cerimónia de Graduação 2024: 120 Novos Profissionais Recebem os
+                seus Diplomas
+              </h3>
+              <p>
+                Numa cerimónia emocionante realizada no auditório principal da
+                escola, 120 alunos das diferentes especialidades técnicas
+                receberam os seus diplomas de conclusão, marcando o início de
+                uma nova etapa nas suas carreiras profissionais.
+              </p>
+              <a href="#" class="noticia-link"
+                >Ler mais <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Notícias menores -->
+          <div class="noticias-side reveal-right">
+            <div class="noticia-mini">
+              <div class="noticia-mini-date">
+                <span class="d">15</span><span class="m">Fev</span>
+              </div>
+              <div class="noticia-mini-text">
+                <h4>Inscrições Abertas para o Ano Lectivo 2025/2026</h4>
+                <span>Matrículas</span>
+              </div>
+            </div>
+            <div class="noticia-mini">
+              <div class="noticia-mini-date">
+                <span class="d">08</span><span class="m">Fev</span>
+              </div>
+              <div class="noticia-mini-text">
+                <h4>Workshop de Empreendedorismo para Alunos do 3.º Ano</h4>
+                <span>Formação</span>
+              </div>
+            </div>
+            <div class="noticia-mini">
+              <div class="noticia-mini-date">
+                <span class="d">28</span><span class="m">Jan</span>
+              </div>
+              <div class="noticia-mini-text">
+                <h4>
+                  Parceria com Empresas do Sector Energético para Estágios
+                </h4>
+                <span>Parceria</span>
+              </div>
+            </div>
+            <div class="noticia-mini">
+              <div class="noticia-mini-date">
+                <span class="d">20</span><span class="m">Jan</span>
+              </div>
+              <div class="noticia-mini-text">
+                <h4>Inauguração do Novo Laboratório de Informática</h4>
+                <span>Infraestrutura</span>
+              </div>
+            </div>
+            <div class="noticia-mini">
+              <div class="noticia-mini-date">
+                <span class="d">12</span><span class="m">Jan</span>
+              </div>
+              <div class="noticia-mini-text">
+                <h4>Olimpíadas de Matemática: Instituto Fica em 2.º Lugar</h4>
+                <span>Conquista</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       GALERIA
+  ================================= -->
+    <section id="galeria">
+      <div class="container">
+        <div class="galeria-header reveal">
+          <div>
+            <div class="section-tag">Galeria</div>
+            <h2 class="section-title">O Nosso Espaço</h2>
+          </div>
+          <a href="#galeria" class="btn btn-primary"
+            >Ver Mais <i class="fas fa-images"></i
+          ></a>
+        </div>
+
+        <div class="galeria-grid reveal">
+          <!-- Item grande -->
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <div class="galeria-img-icon">
+                <i class="fas fa-school"></i>
+                <span>Edifício Principal</span>
+              </div>
+            </div>
+            <div class="galeria-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <div class="galeria-caption">Edifício Principal do Instituto</div>
+          </div>
+          <!-- Itens menores -->
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <div class="galeria-img-icon">
+                <i class="fas fa-flask"></i>
+                <span>Laboratório</span>
+              </div>
+            </div>
+            <div class="galeria-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <div class="galeria-caption">Laboratório de Química</div>
+          </div>
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <div class="galeria-img-icon">
+                <i class="fas fa-computer"></i>
+                <span>Informática</span>
+              </div>
+            </div>
+            <div class="galeria-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <div class="galeria-caption">Sala de Informática</div>
+          </div>
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <div class="galeria-img-icon">
+                <i class="fas fa-users"></i>
+                <span>Alunos</span>
+              </div>
+            </div>
+            <div class="galeria-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <div class="galeria-caption">Actividades Académicas</div>
+          </div>
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <div class="galeria-img-icon">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Formatura</span>
+              </div>
+            </div>
+            <div class="galeria-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <div class="galeria-caption">Cerimónia de Graduação</div>
+          </div>
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <div class="galeria-img-icon">
+                <i class="fas fa-book"></i>
+                <span>Biblioteca</span>
+              </div>
+            </div>
+            <div class="galeria-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <div class="galeria-caption">Biblioteca e Espaço de Estudo</div>
+          </div>
+          <div class="galeria-item">
+            <div class="galeria-img">
+              <div class="galeria-img-icon">
+                <i class="fas fa-tools"></i>
+                <span>Oficina</span>
+              </div>
+            </div>
+            <div class="galeria-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+            <div class="galeria-caption">Oficina de Mecânica</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       CONTACTOS
+  ================================= -->
+    <section id="contactos">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 60px" class="reveal">
+          <div class="section-tag">Contactos</div>
+          <h2 class="section-title">Fale Connosco</h2>
+          <p class="section-sub" style="margin: 0 auto">
+            Estamos disponíveis para responder às suas questões sobre admissões,
+            cursos e serviços da escola.
+          </p>
+        </div>
+
+        <div class="contactos-inner">
+          <!-- Info -->
+          <div class="contactos-info reveal-left">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Endereço</h4>
+                <p>Rua Principal, Bairro Académico<br />Huambo, Angola</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-text">
+                <h4>Telefone</h4>
+                <p>+244 923 456 789<br />+244 912 345 678</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>E-mail</h4>
+                <p>geral@impc-sambambi.ao<br />inscricoes@impc-sambambi.ao</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div class="contact-text">
+                <h4>Horário de Funcionamento</h4>
+                <p>Segunda a Sexta: 07h00 – 17h00<br />Sábado: 08h00 – 12h00</p>
+              </div>
+            </div>
+
+            <!-- Map placeholder -->
+            <div class="map-wrap">
+              <i class="fas fa-map-marked-alt"></i>
+              <p>Mapa de Localização — Huambo, Angola</p>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="contactos-form reveal-right">
+            <div class="form-card">
+              <h3 class="form-title">Envie uma Mensagem</h3>
+              <form id="contactForm" onsubmit="submitForm(event)">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Nome Completo *</label>
+                    <input type="text" placeholder="O seu nome" required />
+                  </div>
+                  <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="tel" placeholder="+244 9XX XXX XXX" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>E-mail *</label>
+                  <input
+                    type="email"
+                    placeholder="seuemail@exemplo.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Assunto</label>
+                  <select>
+                    <option value="">Seleccione o assunto</option>
+                    <option>Informações sobre Cursos</option>
+                    <option>Processo de Inscrição</option>
+                    <option>Documentação Necessária</option>
+                    <option>Propinas e Pagamentos</option>
+                    <option>Outro</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Mensagem *</label>
+                  <textarea
+                    placeholder="Escreva a sua mensagem aqui..."
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="width: 100%; justify-content: center"
+                >
+                  <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                </button>
+                <div class="form-success" id="formSuccess">
+                  <i class="fas fa-check-circle"></i> Mensagem enviada com
+                  sucesso! Responderemos em breve.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+       FOOTER
+  ================================= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="footer-logo-circle">CS</div>
+              <div class="footer-logo-text">
+                Instituto Médio Politécnico<br />Celestino Sambambi
+              </div>
+            </div>
+            <p class="footer-desc">
+              Formando profissionais técnicos de excelência para o
+              desenvolvimento de Angola. Compromisso com a qualidade, inovação e
+              valores humanos.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" title="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link" title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link" title="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="social-link" title="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link" title="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Links rápidos -->
+          <div class="footer-col">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre a Escola</a></li>
+              <li><a href="#cursos">Cursos Técnicos</a></li>
+              <li><a href="#noticias">Notícias</a></li>
+              <li><a href="#galeria">Galeria</a></li>
+              <li><a href="#contactos">Contactos</a></li>
+            </ul>
+          </div>
+
+          <!-- Cursos -->
+          <div class="footer-col">
+            <h4>Nossos Cursos</h4>
+            <ul>
+              <li><a href="#cursos">Informática e Gestão</a></li>
+              <li><a href="#cursos">Electrotecnia</a></li>
+              <li><a href="#cursos">Mecânica Industrial</a></li>
+              <li><a href="#cursos">Química Industrial</a></li>
+              <li><a href="#cursos">Contabilidade</a></li>
+              <li><a href="#cursos">Construção Civil</a></li>
+            </ul>
+          </div>
+
+          <!-- Contacto -->
+          <div class="footer-col">
+            <h4>Contactos</h4>
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Rua Principal, Bairro Académico, Huambo, Angola</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+244 923 456 789</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>geral@impc-sambambi.ao</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Seg–Sex: 07h00–17h00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="footer-bottom">
+          <p>
+            © 2025 Instituto Médio Politécnico Celestino Sambambi. Todos os
+            direitos reservados.
+          </p>
+          <p>Desenvolvido com <span>♥</span> para a Educação Angolana</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div
+      id="back-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- ================================
+       JAVASCRIPT
+  ================================= -->
+<script src="script.js"></script>
+  </body>
+</html>
